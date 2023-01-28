@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">***CALCULATOR***</h1>
+
+        <div class="calculator">
+            <input type="text" name="screen" id="screen">
+            <table>
+                <tr>
+                    <td><button class="button">(</button></td>
+                    <td><button class="button">)</button></td>
+                    <td><button class="button">%</button></td>
+                    <td><button class="button">C</button></td>
+
+                </tr>
+                <tr>
+                    <td><button class="button">7</button></td>
+                    <td><button class="button">8</button></td>
+                    <td><button class="button">9</button></td>
+                    <td><button class="button">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">4</button></td>
+                    <td><button class="button">5</button></td>
+                    <td><button class="button">6</button></td>
+                    <td><button class="button">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button">1</button></td>
+                    <td><button class="button">2</button></td>
+                    <td><button class="button">3</button></td>
+                    <td><button class="button">/</button></td>
+
+                </tr>
+                <tr>
+                    <td><button class="button">.</button></td>
+                    <td><button class="button">0</button></td>
+                    <td><button class="button">+</button></td>
+                    <td><button class="button">=</button></td>
+                </tr>
+            </table>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+
+#btn {
+    background-color: #fb0066;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
